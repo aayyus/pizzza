@@ -13,11 +13,13 @@
   font-family: "Roboto", sans-serif;
   margin-top: 40px;
 }
-.nav-orange {
-  color: orangered;
-}
-.nav-list {
+
+.nav-items {
   color: grey;
+}
+.nav-items:hover{
+  color: orangered;
+  cursor: pointer;
 }
 .leftnav {
   font-weight: bolder;
@@ -557,5 +559,55 @@ font-weight: bold;
 .btn-order:hover{
   color: orangered;
   background-color: white;
+
+}
+.maill{
+  display: flex;
+  justify-content: space-evenly;
+}
+.mail{
+  margin-top: 20px;
+  height: 20px;
+  width: 20px;
+}
+.logoo{
+  margin-top: 40px;
+}
+.support{
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  
+}
+.footer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(255, 86, 25);
+}
+.F2{
+  font-family: "Roboto", sans-serif;
+list-style: none;
+font-size: 20px;
+color: white;
+margin-top: 20px;
+}
+
+.F2 img{
+  height: 20px;
+  width: 20px;
+}
+.lowest{
+  text-align: center;
+  padding: 40px;
+  font-size: 17px;
+  color: white;
+  background-color:rgb(255, 86, 25) ;
+  font-family: "Roboto", sans-serif;
+}
+.lowest img{
+  height: 15px;
+  width: 15px;
 
 }
