@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +94,7 @@
 .float-image {
   position: absolute;
   top: 150px;
-  right: 400px;
+  right: 500px;
   height: 250px;
   width: 280px;
 }
@@ -490,7 +491,7 @@ font-style: italic;
 
 .input-mail{
   display: flex;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .email{
@@ -498,13 +499,14 @@ font-style: italic;
   border: 1px solid white;
   width: 270px;
   padding:10px;
+  outline: none;
 }
 /* .email:active{
   border: 1px solid white;
 } */
 
 .input{
-  height: 50px;
+  height: 60px;
   width: 150px;
   background-color: orangered;
   border: none;
@@ -539,7 +541,7 @@ font-weight: bold;
 }
 .halfright{
   width: 40%;
-  margin-top:100px;
+  margin-top:80px;
   padding: 20px;
 }
 .halfright div{
@@ -581,7 +583,7 @@ font-weight: bold;
   
 }
 .footer{
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(255, 86, 25);
@@ -610,4 +612,59 @@ margin-top: 20px;
   height: 15px;
   width: 15px;
 
+}
+
+/* sliders CSS */
+
+.carousel {
+  position: relative;
+
+  height: 100vh;
+}
+ul.slides {
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+}
+li.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  transition-delay: 0.5s;
+}
+li.slide[data-active-slide] {
+  opacity: 1;
+}
+
+.slides-circles {
+  display: flex;
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.slides-circles > div {
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 2px solid rgb(161, 161, 161);
+  transition: background-color 0.5s;
+  transition-delay: 0.5s;
+}
+
+.slides-circles > div[data-active-slide] {
+  background-color: orangered;
+}
+
+.one,.two,.three{
+  background-color: rgb(193, 193, 193);
+  border: none;
 }
