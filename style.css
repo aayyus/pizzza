@@ -321,6 +321,7 @@ padding: 10px;
   background-size: cover;
 }
 .half{
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
 }
@@ -356,6 +357,16 @@ padding: 10px;
 .p9{
   font-size: 18px;
   line-height: 24px;
+}
+.p11{
+  font-size: 50px;
+  font-weight: bold;
+
+}
+.p12{
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+
 }
 .btn-pizza{
   color: white;
@@ -424,5 +435,127 @@ font-size: 20px;
 color: orangered;
 font-weight: bolder;
 font-style: italic;
+
+}
+.card3{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.profile{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.c31{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+  height: 25rem;
+  display: inline-block;
+  /* margin: 20px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      width: 20rem;
+
+}
+.profile img{
+  height: 70px;
+  width: 70px;
+}
+.profile-name{
+  margin-left: 10px;
+}
+.name1{
+  font-size: 20px;
+}
+.name2{
+  font-family: "Roboto", sans-serif;
+
+}
+.name3{
+  letter-spacing: 1px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+
+}
+
+.input-mail{
+  display: flex;
+  margin-top: 30px;
+}
+
+.email{
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 270px;
+  padding:10px;
+}
+/* .email:active{
+  border: 1px solid white;
+} */
+
+.input{
+  height: 50px;
+  width: 150px;
+  background-color: orangered;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+font-weight: bold;
+}
+.input:hover{
+  opacity: 0.7;
+}
+.input img{
+  height: 40px;
+  width: 40px;
+}
+
+.pre-footer{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: row;
+}
+.halfleft{
+  text-align: left;
+  padding: 50px;
+  margin-left: 200px;
+  margin-right: 50px;
+
+  width: 60%;
+}
+.halfright{
+  width: 40%;
+  margin-top:100px;
+  padding: 20px;
+}
+.halfright div{
+  font-size: 40px;
+  font-weight: bold;
+}
+.btn-order{
+  color: white;
+  font-weight: bolder;
+  background-color: orangered;
+  border: 2px solid orangered;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: 150px;
+  height: 60px;
+}
+.btn-order:hover{
+  color: orangered;
+  background-color: white;
 
 }
