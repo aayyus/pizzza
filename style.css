@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  margin-left: 30px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+}
+.nav-orange {
+  color: orangered;
+}
+.nav-list {
+  color: grey;
+}
+.leftnav {
+  font-weight: bolder;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.rightnav {
+  display: flex;
+  justify-content: center;
+}
+.btn1 {
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: orangered;
+  font-size: 1em;
+  border-radius: 10px;
+}
+.btn2 {
+  cursor: pointer;
+  border: 2px solid orangered;
+  background-color: transparent;
+  height: 50px;
+  width: 150px;
+  color: rgb(255, 110, 57);
+  border-radius: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+.btn1:hover {
+  border: 2px solid rgb(255, 110, 57);
+}
+.btn2:hover {
+  background: rgb(255, 110, 57);
+  color: white;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+}
+.searchInput {
+  padding-left: 20px;
+  height: 30px;
+  width: 150px;
+  visibility: hidden;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 110, 57);
+}
+.searchBox:hover > .searchInput {
+  visibility: visible;
+}
+.searchInput::placeholder {
+  color: rgb(255, 110, 57);
+}
+.searchButton {
+  align-content: center;
+  background: transparent;
+  color: rgb(255, 110, 57);
+  border: none;
+}
+.image2 {
+  height: auto;
+  width: 65%;
+  border-radius: 25%;
+  margin-top: 15%;
+}
+.float-image {
+  position: absolute;
+  top: 150px;
+  right: 400px;
+  height: 250px;
+  width: 280px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.menu {
+  cursor: pointer;
+  border: 1px solid rgb(255, 110, 57);
+  background-color: orangered;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 250px;
+  height: 60px;
+  margin-top: 30px;
+}
+.menu:hover {
+  color: orangered;
+  border: 2px solid orangered;
+  background-color: white;
+}
+.text h1 {
+  font-size: 90px;
+  line-height: 90%;
+}
+.text h4 {
+  font-family: "Roboto", sans-serif;
+  color: grey;
+  margin-top: 30px;
+  letter-spacing: 1px;
+}
+
+.text {
+  margin-top: 80px;
+  margin-left: 7%;
+  width: 35%;
+}
+.text2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+
+.good {
+  color: orangered;
+}
+.text h3 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: orangered;
+}
+.text2 h5 {
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 21000;
+}
+.text3{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+.p2{
+  font-size: 90px;
+  line-height: 90%;
+  margin-top: 30px;
+  text-align: center;
+  font-weight: bold;
+
+}
+.p1{
+  margin-top: 150px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.p3{
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 30px;
+}
+.card{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.c1,.c2,.c3{
+  height: 320px;
+  width: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 25px;
+  border-radius: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid white;
+  letter-spacing: 1px;
+
+}
+.c1:hover,.c2:hover,.c3:hover{
+  border: 2px solid rgb(255, 110, 57);
+  transition: 0.3s;
+
+}
+.c1 div,.c3 div{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.c2 div{
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+
+}
+.c1 img,.c3 img{
+  height: 100px;
+  width: 100px;
+}
+.c2 img{
+  height: 80px;
+  width: 80px;
+}
+.checked{
+  color: orangered;
+  display: flex;
+  align-items: center; 
+}
+.fa{
+  margin-top: 20px;
+  flex-direction: row;
+}
+.card2{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+}
+.circle img{
+  width: 400px;
+  height: 150px;
+  position:relative;
+  right: 40%;
+}
+.line{
+  margin-top: 5px;
+  width: 100%;
+  background: orangered;
+  height: 4px;
+  opacity: 0.2;
+  border-radius: 1px;
+  border: 1px solid orangered;
+}
+.c21{
+  border: 2px solid white;
+  background-color: rgba(255, 110, 57,0.1);
+  
+  display: flex;
+border-radius: 10px;  
+padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  height:500px;
+  width: 350px;
+}
+.p4{
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.p5{
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.button-card{
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid orangered;
+  background: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.button-card:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.button-card div{
+  color: white;
+}
+.lefthalf{
+  box-sizing: border-box;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: 40px;
+  width: 45%;
+  height: 440px;
+  background: url(images/pizzabg.jpg) ;
+  background-size: cover;
+}
+.half{
+  display: flex;
+  flex-direction: row;
+}
+.righthalf{
+  width: 55%;
+}
+.lefthalf-text{
+  
+  width: 50%;
+  float: right;
+}
+.p6{
+  font-size: 30px;
+  font-weight: bold;
+}
+.p7{
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.p8{
+  margin-top: 20px;
+  font-style: italic;
+  display: flex;
+  font-weight: bolder;
+  align-items: center;
+  flex-direction: row;
+  font-size: 50px;
+}
+.p8 div{
+  font-size: 40px;
+}
+.p9{
+  font-size: 18px;
+  line-height: 24px;
+}
+.btn-pizza{
+  color: white;
+  font-weight: bolder;
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  margin-top: 60px;
+  width: 150px;
+  height: 40px;
+}
+
+.spicy img{
+  margin-top: 40px;
+  display: block;
+  height: 120px;
+  width: 120px;
+}
+.spicy{
+  display: flex;
+  
+  
+  flex-direction: row;
+  align-items: center;
+}
+.flex-content{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.spicy-button{
+  margin: 0px 20px;
+  border: none;
+  background: rgb(154, 154, 154);
+  opacity: 0.5;
+  border-radius: 5px;
+  width: 200px;
+  height: 2px;
+}
+.f1{
+  display: flex;
+  margin-left: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+.f2{
+  margin: 10px;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+
+}
+.price{
+  
+  display: flex;
+  width: 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+font-size: 20px;
+color: orangered;
+font-weight: bolder;
+}
+.price div{
+  font-family: "Roboto", sans-serif;
+font-size: 20px;
+color: orangered;
+font-weight: bolder;
+font-style: italic;
+
+}
