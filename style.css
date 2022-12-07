@@ -314,17 +314,18 @@ padding: 10px;
 }
 .lefthalf{
   box-sizing: border-box;
-  padding: 40px;
+  padding:  40px ;
   font-family: "Roboto", sans-serif;
   color: white;
-  margin: 40px;
+  margin: 40px ;
   width: 45%;
   height: 440px;
   background: url(images/pizzabg.jpg) ;
   background-size: cover;
 }
 .half{
-  margin-top: 40px;
+  margin-left: 50px;
+  /* margin-top: 40px; */
   display: flex;
   flex-direction: row;
 }
@@ -612,6 +613,37 @@ margin-top: 20px;
   height: 15px;
   width: 15px;
 
+}
+.slider-button1 img{
+  height: 40px;
+  width: 50px;
+
+}
+.slider-button2 img{
+  height: 40px;
+  width: 50px;
+}
+.slider-button1{
+  margin-left: 100px;
+  border: solid white;
+  background-color: white;
+}
+.slider-button1:hover{
+  opacity: 0.5;
+
+}
+.slider-button2{
+  float: right;
+  margin-right: 200px;
+  border: solid white;
+  background-color: white;
+}
+.slider-button2:hover{
+  opacity: 0.5;
+
+}
+.slider-direction{
+  margin-top: 70px;
 }
 
 /* sliders CSS */
