@@ -1,29 +1,32 @@
-const buttons = document.querySelectorAll("[data-slide-direction]");
+let slideIndex = 1;
+showSlides(slideIndex);
 
-buttons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.slideDirection === "next" ? 1 : -1;
-    changeSlide(offset);
-  });
-});
 
-const changeSlide = (offset) => {
-  const slides = document.querySelector(".slides");
-  const activeSlide = slides.querySelector("[data-active-slide]");
-  let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-  newIndex =
-    newIndex < 0
-      ? slides.children.length - 1
-      : newIndex === slides.children.length
-      ? 0
-      : newIndex;
-  slides.children[newIndex].dataset.activeSlide = true;
-  delete activeSlide.dataset.activeSlide;
 
-  const circles = document.querySelector(".slides-circles");
-  const activeCircle = circles.querySelector("[data-active-slide]");
-  circles.children[newIndex].dataset.activeSlide = true;
-  delete activeCircle.dataset.activeSlide;
-};
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-setInterval(changeSlide.bind(null, 1), 3000);
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
