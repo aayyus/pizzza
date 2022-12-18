@@ -28,9 +28,14 @@
   margin-top: 20px;
   z-index: 2;
 }
-..navbar{
+/* .navbar{
   display: flex;
   align-items: center;
+} */
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .container {
   display: flex;
