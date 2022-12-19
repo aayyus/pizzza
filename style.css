@@ -13,6 +13,9 @@
 .float-image1{
   display: none;
 }
+.slider-button3,.slider-button4{
+  display: none;
+}
 .navbar1 {
   padding: 10px;
   border-bottom: 1px solid rgba(255, 110, 57, 0.3);
@@ -131,6 +134,9 @@
   border-radius: 10px;
   border: 2px solid rgb(255, 110, 57);
 }
+.container-text{
+  margin-top: 150px;
+}
 .searchBox:hover > .searchInput {
   visibility: visible;
 }
@@ -229,7 +235,7 @@
   font-weight: bold;
 }
 .p1 {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -250,8 +256,8 @@
 .c1,
 .c2,
 .c3 {
-  height: 320px;
-  width: 270px;
+  height: 300px;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,6 +269,10 @@
   padding: 10px;
   border: 2px solid white;
   letter-spacing: 1px;
+}
+.card-paragraph{
+  padding: 10px;
+
 }
 .c1:hover,
 .c2:hover,
@@ -283,15 +293,12 @@
   font-weight: bold;
   margin-bottom: 10px;
 }
-.c1 img,
+.c1 img,.c2 img,
 .c3 img {
   height: 100px;
   width: 100px;
 }
-.c2 img {
-  height: 80px;
-  width: 80px;
-}
+
 .checked {
   color: orangered;
   display: flex;
@@ -352,9 +359,9 @@
   margin-top: 5px;
   width: 100%;
   background: orangered;
-  height: 4px;
+  height: 2px;
   opacity: 0.2;
-  border-radius: 1px;
+  border-radius: 2px;
   border: 1px solid orangered;
 }
 .c21 {
@@ -584,6 +591,8 @@
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .profile img {
+  border-radius: 50%;
+    border: solid 1px white;
   height: 70px;
   width: 70px;
 }
@@ -717,8 +726,10 @@
 .lowest {
   width: 100%;
   text-align: center;
-  /* padding: 20px; */
+  padding: 10px;
   font-size: 17px;
+  letter-spacing: 1px;
+
   color: white;
   background-color: rgb(255, 86, 25);
   font-family: "Roboto", sans-serif;
@@ -865,7 +876,7 @@ li.slide[data-active-slide] {
 }
 
 .email {
-  width: auto;
+  /* width: auto; */
 }
 
 .p11 {
