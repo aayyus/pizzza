@@ -82,6 +82,10 @@
   color: orangered;
   cursor: pointer;
 }
+.image img {
+  width: 100px;
+  height: 60px;
+}
 .leftnav {
   font-weight: bolder;
   display: flex;
@@ -726,7 +730,7 @@
 .lowest {
   width: 100%;
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px ;
   font-size: 17px;
   letter-spacing: 1px;
 
